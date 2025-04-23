@@ -4,6 +4,7 @@ import org.testng.annotations.DataProvider;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 @CucumberOptions(features="src/test/java/Features",glue= "stepDefinitions",
 monochrome=true, 
@@ -19,4 +20,5 @@ public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 	{
 		return super.scenarios();
 	}
+	
 }

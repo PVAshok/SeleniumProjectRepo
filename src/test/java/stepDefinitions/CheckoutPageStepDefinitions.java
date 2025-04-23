@@ -45,5 +45,6 @@ public void verify_user_has_ability_to_enter_promo_code_and_place_the_order() {
 public void user_proceeds_to_checkout_and_validate_the_tom_items_in_checkout_page(String name) throws InterruptedException {
 	
 	checkoutpage.checkoutitems();
+	System.out.println("Ashok");
 }
 }
